@@ -203,7 +203,7 @@ label::after
     font-size: 34px;
     position: absolute;
     right: 20px;
-    transition: transform 0.5s;
+    
 
 }
 
@@ -229,10 +229,7 @@ input[type="radio"]
     padding: 30px 20px;
 }
 
-.accordion input[type="radio"]:checked + label::after
-{
-    transform: rotate(135deg);
-}
+
 
 .faq .email-signup
 {
@@ -326,7 +323,7 @@ input[type="radio"]
     .email-signup button 
     {
         font-size: 12px;
-        padding: 10px 15px;
+        padding: 1px 1px;
     }
 
     .text-col, .img-col
@@ -375,30 +372,11 @@ input[type="radio"]
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
+ }
 
     
 
     
-}
 
 
 
