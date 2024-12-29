@@ -76,37 +76,85 @@ nav button{
     margin-bottom: 20px;
 }
 
-.email-signup{
-    background: #fff;
-    border-radius: 4px;
+.email-signup {
     display: flex;
+    flex-direction: column; /* Stack items vertically by default */
     align-items: center;
-    margin-top: 30px;
-    overflow: hidden;
-    max-width: 500px;
-    margin: 30px auto;
+    gap: 10px; /* Space between input and button */
+    max-width: 400px;
+    margin: 20px auto; /* Center the form */
+  }
+  
+  /* Input field styling */
+  .email-signup input {
+    width: 100%;
     padding: 10px;
-}
-
-.email-signup input{
-    flex: 1;
-    border: 0;
-    outline: 0;
-    padding: 10px;
-    font-size: 14px;
-}
-
-.email-signup button{
-    background: #db0001;
-    border: 0;
-    outline: 0;
-    color: #fff;
-    font-size: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button styling */
+  .email-signup button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
-    padding: 10px 15px;
-    margin-left: 10px;
-    white-space: nowrap;
-}
+    width: 100%; /* Full width by default */
+  }
+  
+
+.container {
+    text-align: center; /* Center content initially */
+    padding: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column; /* Stack elements on small screens */
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto; /* Center the input group */
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-group .get-started {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Adjust for larger screens */
+  @media (min-width: 600px) {
+    .input-group {
+      flex-direction: row; /* Place input and button side-by-side */
+    }
+  
+    .input-group input {
+      flex: 1; /* Input takes up available space */
+      margin-right: 10px;
+    }
+  
+    .get-started {
+      flex-shrink: 0; /* Prevent button from shrinking */
+    }
+  }
+  
 
 .features{
     padding: 50px 12%;
@@ -250,7 +298,7 @@ input[type="radio"]{
     margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 550px){
     .logo{
         width: 100px;
     }
